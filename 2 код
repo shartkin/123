@@ -1,10 +1,10 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
 int main()
-{
-    int x= 3,y=4;
-    cout << ++x << "\t" << --y << endl;
-    cout << x++ << "\t" << y-- << endl;
-    cout << x << "\t" << y << endl;
-    return 0 ;
-}
+  {
+      int x = 3 ;
+      cout << sizeof(int) << endl;
+      cout << sizeof ( x * 10 ) << endl;
+      cout << sizeof (x * 0,1 ) << endl;
+      return 0 ;
+  }
