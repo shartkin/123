@@ -8,7 +8,7 @@ int a = 100, b=20;
  }
  void f2(int b)
  {
-     b* =2;
+     b*=2;
      cout << "f2\t" << b <<"/t" << a << endl;
  }
  int main(){
