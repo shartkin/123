@@ -13,8 +13,5 @@ int main()
     cout << i * i++ <<"\t";
     return 0;
 }
-\\  cout << i * i++ <<"\t";
-    while(a <= b);
-    return 0;
 \\  for(int i=a; i<=b; i++)
-    cout << i * i <<endl;
+    cout << i * i <<endl;//
