@@ -1,15 +1,21 @@
-#include<iostream>
-using namespace std;
-float max(float x, float y); // объявление функции
-int main()
-  {
-    float a = 5.5, b = 3.2, c = 14.1, d;
-    d = max(max(a,b),c);    // 1
-    cout << "max = " << d << endl;
-    return 0 ;
-  }
+#include<iostream>  // Подключение библиотеки для ввода/вывода
+using namespace std; // Использование стандартного пространства имен
 
-  float max(float x, float y) // определение функции
-  {
-     return (x > y) ? x : y;
-  }
+float max(float x, float y); // Прототип (объявление) функции
+
+int main()
+{
+    float a = 5.5, b = 3.2, c = 14.1, d; // Объявление и инициализация переменных
+    
+    d = max(max(a,b),c);    // Вложенный вызов функции max для нахождения максимума из трех чисел
+    cout << "max = " << d << endl; // Вывод результата
+    
+    return 0; // Завершение программы
+}
+
+// Определение функции max
+float max(float x, float y) 
+{
+    // Использование тернарного оператора для возврата большего из двух чисел
+    return (x > y) ? x : y;
+}
