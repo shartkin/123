@@ -1,19 +1,46 @@
 #include <iostream>
 using namespace std;
+
 int main()
 {
-  int x;
-  cin >> x;
-  switch (x)
+  int x; // Объявление переменной для хранения номера дня недели
+  
+  cin >> x; // Ввод номера дня недели от пользователя
+  
+  switch (x) // Оператор выбора на основе значения x
   {
-     case 1: cout << "понедельник" ; break;
-     case 2: cout << "вторник"; break;
-     case 3:  cout << "среда"; break;
-     case 4:  cout << "четверг"; break;
-     case 5:  cout << "пятница"; break;
-     case 6:  cout << "суббота"; break;
-     case 7:  cout << "воскресенье"; break;
-     default: cout << "вы ошиблись";
+     case 1: 
+        cout << "понедельник"; // Вывод для понедельника
+        break; // Выход из switch
+         
+     case 2: 
+        cout << "вторник"; // Вывод для вторника
+        break; // Выход из switch
+         
+     case 3:  
+        cout << "среда"; // Вывод для среды
+        break; // Выход из switch
+         
+     case 4:  
+        cout << "четверг"; // Вывод для четверга
+        break; // Выход из switch
+         
+     case 5:  
+        cout << "пятница"; // Вывод для пятницы
+        break; // Выход из switch
+         
+     case 6:  
+        cout << "суббота"; // Вывод для субботы
+        break; // Выход из switch
+         
+     case 7:  
+        cout << "воскресенье"; // Вывод для воскресенья
+        break; // Выход из switch
+         
+     default: 
+        cout << "вы ошиблись"; // Вывод при неверном вводе (не 1-7)
+        // break не нужен, так как default обычно последний
   }
-  retyrn 0;
+  
+  return 0; // Завершение программы
 }
