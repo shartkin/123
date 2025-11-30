@@ -1,10 +1,18 @@
-#include <iostream>
-using namespace std;
+#include <iostream>  
+using namespace std; 
+
 int main()
 {
-    int x= 3,y=4;
-    cout << ++x << "\t" << --y << endl;
-    cout << x++ << "\t" << y-- << endl;
+    int x = 3, y = 4; // Инициализация переменных: x = 3, y = 4
+    
+    // Префиксные инкремент и декремент
+    cout << ++x << "\t" << --y << endl; // Сначала изменяем, потом выводим
+    
+    // Постфиксные инкремент и декремент  
+    cout << x++ << "\t" << y-- << endl; // Сначала выводим, потом изменяем
+    
+    // Вывод конечных значений переменных
     cout << x << "\t" << y << endl;
-    return 0 ;
+    
+    return 0; // Завершение программы
 }
