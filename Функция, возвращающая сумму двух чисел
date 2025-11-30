@@ -1,13 +1,19 @@
-#include<iostream>
-using namespace std;
+#include<iostream>  // Подключение библиотеки для ввода/вывода
+using namespace std; // Использование стандартного пространства имен
+
+// Функция sum - принимает два целых числа и возвращает их сумму
 int sum(int x, int y)
 {
-    return x+y;
+    return x + y;  // Возвращает сумму параметров x и y
 }
+
 int main(){
-    int a = 5, b = 3, c;
-    c = sum(a,b);
-    cout << "sum =" <<  c << endl;
-    cout << "sum =" << sum(a,b) << endl;
-    return 0 ;
+    int a = 5, b = 3, c;  // Объявление и инициализация переменных
+    
+    c = sum(a, b);  // Вызов функции sum с аргументами a и b, результат сохраняется в c
+    cout << "sum =" << c << endl;  // Вывод результата через переменную c
+    
+    cout << "sum =" << sum(a, b) << endl;  // Вывод результата напрямую из функции
+    
+    return 0;  // Завершение программы
 }
