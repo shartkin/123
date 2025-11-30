@@ -1,14 +1,28 @@
 #include<iostream>
+#include<limits>
 using namespace std;
+
 int main()
 {
     int a = 1500000000;
-    a = (a * 10) / 10; // 1 - переполнение целого типа
+    
+    // Проверка на переполнение перед вычислением
+    if (a > INT_MAX / 10) {
+        cout << "Ошибка: возможно переполнение!" << endl;
+    } else {
+        a = (a * 10) / 10;
+    }
     cout << "a = " << a << endl;
     
     int b = 1500000000;
-    b = (static_cast<double>(b) * 10) / 10; // 2 - использование вещественного типа
-    cout << "b= " << b << endl;
+    // Безопасное вычисление через double
+    b = (static_cast<double>(b) * 10) / 10;
+    cout << "b = " << b << endl;
+    
+    // Альтернативное решение с использованием long long
+    long long c = 1500000000;
+    c = (c * 10) / 10;
+    cout << "c = " << c << endl;
     
     return 0;
 }
